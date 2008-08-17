@@ -37,7 +37,7 @@ typedef struct {
 /* Loads a TGA file into a kos_img_t struct */
 int tga_to_img(const char *fn, kos_img_t *rv) {
 	tga_hdr tgah;
-	uint32	fd;
+	file	fd;
 	uint8	r, g, b, a;
 	int	x, y;
 	int	num_bytes;
