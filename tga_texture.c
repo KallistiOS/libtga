@@ -9,8 +9,6 @@
 #include <kos.h>
 #include <tga/tga.h>
 
-CVSID("$Id: tga_texture.c,v 1.2 2002/04/07 02:34:27 bardtx Exp $");
-
 /* Loads a TGA file into texture RAM, potentially twiddling it. 
    TGA files already include an alpha channel. */
 int tga_load_texture(const char *fn, int twiddle, uint32 *txr_out, int *w, int *h) {

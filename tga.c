@@ -17,8 +17,6 @@
 #include <tga/tga.h>
 #include <assert.h>
 
-CVSID("$Id: tga.c,v 1.6 2003/06/19 04:33:03 bardtx Exp $");
-
 typedef struct {
 	uint8  image_id_length __attribute__((packed));		/* Length of Image ID field */
 	uint8  colormap_type __attribute__((packed));		/* Color Map type */
