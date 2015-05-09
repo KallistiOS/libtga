@@ -14,8 +14,8 @@
 */
 
 #include <kos.h>
-#include <tga/tga.h>
 #include <assert.h>
+#include "tga.h"
 
 typedef struct {
 	uint8  image_id_length __attribute__((packed));		/* Length of Image ID field */
@@ -91,7 +91,7 @@ int tga_to_img(const char *fn, kos_img_t *rv) {
 			fs_read(fd, &g, 1);
 			fs_read(fd, &r, 1);
 			fs_read(fd, &a, 1);
-			
+
 			/* Cheap scaling to ARGB4444 */
 			a = a >> 4 & 0x0f;
 			r = r >> 4 & 0x0f;

@@ -7,9 +7,9 @@
 */
 
 #include <kos.h>
-#include <tga/tga.h>
+#include "tga.h"
 
-/* Loads a TGA file into texture RAM, potentially twiddling it. 
+/* Loads a TGA file into texture RAM, potentially twiddling it.
    TGA files already include an alpha channel. */
 int tga_load_texture(const char *fn, int twiddle, uint32 *txr_out, int *w, int *h) {
 	kos_img_t	img;
@@ -36,4 +36,3 @@ int tga_load_texture(const char *fn, int twiddle, uint32 *txr_out, int *w, int *
 
 	return 0;
 }
-

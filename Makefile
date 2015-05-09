@@ -5,6 +5,7 @@
 
 TARGET = libtga.a
 OBJS = tga.o
+KOS_CFLAGS += -Iinclude
 
 all: create_kos_link defaultall
 
